@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HomeActivity"
+    android:gravity="center">
+
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:id="@+id/txt1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_centerHorizontal="true">
+
+        <TextView
+            android:id="@+id/txtnamaku"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Admin"
+            android:textSize="50sp"/>
+
+
+        <TextView
+            android:id="@+id/txtusername"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nama"
+            android:textSize="50sp"/>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/btn"
+        android:layout_below="@+id/txt1"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="50dp"
+        android:layout_centerHorizontal="true">
+
+        <Button
+            android:id="@+id/btnfragment1"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:text="fragment1"/>
+
+        <Button
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:id="@+id/bt_logout"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:text="Logout"/>
+
+
+        <Button
+            android:id="@+id/btn_fragment2"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:text="fragment2"/>
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_below="@+id/btn"
+        android:layout_marginTop="50dp"
+        android:id="@+id/framelayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </FrameLayout>
+</RelativeLayout>
